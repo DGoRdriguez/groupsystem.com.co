@@ -85,8 +85,8 @@
 		-o-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
-		background-color: #348cb2;
-		background-image: url("images/bg.jpg");
+		--background-color: #099CA3;
+		background-image: url("images/Logo Group System_Mod.png");
 		background-position: bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
@@ -188,6 +188,7 @@
 		top: -1em;
 		vertical-align: middle;
 		width: 90%;
+		color: #099CA3;
 	}
 
 		#header h1 {
@@ -198,9 +199,10 @@
 		}
 
 		#header p {
-			font-size: 1.25em;
+			font-size: 1.55em;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
+			font-style: italic;
 		}
 
 		#header nav {
@@ -226,7 +228,7 @@
 				display: inline-block;
 				height: 5.35em;
 				line-height: 5.885em;
-				opacity: 0;
+				--opacity: 0;
 				position: relative;
 				top: 0;
 				width: 5.35em;
@@ -326,7 +328,7 @@
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
 					border-radius: 100%;
-					border: solid 1px white;
+					border: solid 2px #099CA3;
 					display: block;
 					font-size: 1.75em;
 					height: 2.5em;
@@ -343,7 +345,8 @@
 
 					#header nav a:hover:before {
 						background-color: rgba(255, 255, 255, 0.175);
-						color: white;
+						color: #2C4F77;
+						border: solid 3px #2C4F77;
 					}
 
 				#header nav a:active {
@@ -353,7 +356,8 @@
 
 					#header nav a:active:before {
 						background-color: rgba(255, 255, 255, 0.35);
-						color: white;
+						color: #2C4F77;
+						border: solid 3px #2C4F77;
 					}
 
 				#header nav a span {
@@ -363,17 +367,21 @@
 /* Footer */
 
 	#footer {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		--background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		--background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		--background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		--background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		--background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		bottom: 0;
 		cursor: default;
 		height: 6em;
+		color: #099CA3;
 		left: 0;
 		line-height: 8em;
 		position: absolute;
 		text-align: center;
 		width: 100%;
+	}
+	footer.p{
+		font-family: DokChampa;
 	}
